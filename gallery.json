@@ -1,8 +1,5 @@
 [
-  {"file": "images/project1.png", "title": "Luxury Residential Estate", "type": "image"},
-  {"file": "images/project2.png", "title": "Corporate Office Complex", "type": "image"},
   {"file": "images/project3.png", "title": "Municipal Infrastructure", "type": "image"},
-  {"file": "images/commercial.png", "title": "Commercial Construction", "type": "image"},
   {"file": "images/residential.png", "title": "Residential Construction", "type": "image"},
   {"file": "images/public-works.png", "title": "Public Works Project", "type": "image"}
 ]
