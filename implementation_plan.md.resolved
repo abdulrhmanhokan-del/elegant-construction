@@ -1,0 +1,26 @@
+# Gallery Update Documentation & GitHub Sync
+
+The objective is to formalize the process for updating images and videos in the Elegant Construction gallery and ensure the current repository state is synchronized with GitHub.
+
+## User Review Required
+
+> [!IMPORTANT]
+> This plan will consolidate the gallery update instructions I provided earlier into a persistent documentation file and push all changes to your GitHub repository.
+
+## Proposed Changes
+
+### 1. Documentation
+- **[NEW] [GALLERY_GUIDE.md](file:///c:/Users/Abdul/.gemini/antigravity/scratch/elegant-construction/GALLERY_GUIDE.md)**: Create a guide explaining the automated GitHub Actions process for updating media.
+
+### 2. GitHub Sync
+- **Push to GitHub**: Use the `/push-to-github` workflow to synchronize the local `elegant-construction` repository with the remote master/main branch.
+  - This includes any recent changes to `gallery-data.js`, `GALLERY_GUIDE.md`, and the `gallery/` directory.
+
+## Open Questions
+- Is there a specific branch you would like me to push to, or should I use the default (usually `main` or `master`)?
+
+## Verification Plan
+
+### Manual Verification
+- Verify that `GALLERY_GUIDE.md` is correctly created in the root directory.
+- Confirm that the `git push` command completes successfully and the changes are visible on GitHub.
