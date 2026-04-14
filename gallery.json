@@ -1,8 +1,7 @@
 [
-  {"file": "images/project1.png", "title": "Luxury Residential Estate", "type": "image"},
-  {"file": "images/project2.png", "title": "Corporate Office Complex", "type": "image"},
-  {"file": "images/project3.png", "title": "Municipal Infrastructure", "type": "image"},
-  {"file": "images/commercial.png", "title": "Commercial Construction", "type": "image"},
-  {"file": "images/residential.png", "title": "Residential Construction", "type": "image"},
-  {"file": "images/public-works.png", "title": "Public Works Project", "type": "image"}
+  {"file": "gallery/borrego-park.jpg", "title": "Borrego Park", "type": "image"},
+  {"file": "gallery/communications-center-renovation.jpg", "title": "Communications Center Renovation", "type": "image"},
+  {"file": "gallery/foothill-ranch-regency-park.jpg", "title": "Foothill Ranch Regency Park", "type": "image"},
+  {"file": "gallery/huntington-beach-police-department.png", "title": "Huntington Beach Police Department", "type": "image"},
+  {"file": "gallery/lake-forest-live-oak-terraces.jpg", "title": "Lake Forest Live Oak Terraces", "type": "image"}
 ]
