@@ -5,5 +5,6 @@ const GALLERY_DATA = [
   {"file": "gallery/communications-center-renovation.jpg", "title": "Communications Center Renovation", "type": "image"},
   {"file": "gallery/foothill-ranch-regency-park.jpg", "title": "Foothill Ranch Regency Park", "type": "image"},
   {"file": "gallery/huntington-beach-police-department.png", "title": "Huntington Beach Police Department", "type": "image"},
+  {"file": "gallery/irvine-valley-college-project.mp4", "title": "Irvine Valley College Project", "type": "video"},
   {"file": "gallery/lake-forest-live-oak-terraces.jpg", "title": "Lake Forest Live Oak Terraces", "type": "image"}
 ];
