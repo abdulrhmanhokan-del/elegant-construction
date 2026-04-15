@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => pageLoader.remove(), 500);
   }
 
+  // ─── Hero Video Optimization ──────────────────────────────────
+  const heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    // Force play in case browser autoplay was throttled
+    heroVideo.play().catch(() => {
+      // If blocked, wait for first user interaction
+      document.addEventListener('click', () => heroVideo.play(), { once: true });
+    });
+
+    // Ensure it feels instant when it starts
+    heroVideo.addEventListener('playing', () => {
+      heroVideo.style.opacity = '1';
+    });
+  }
+
   // ─── Sticky Header ──────────────────────────────────────────
   const header = document.getElementById('header');
   const topBar = document.querySelector('.top-bar');
