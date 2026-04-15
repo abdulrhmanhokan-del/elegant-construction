@@ -185,13 +185,28 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.innerHTML;
       
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      // Get form data
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const projectType = document.getElementById('projectType').value;
+      const details = document.getElementById('message').value;
+
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
       btn.disabled = true;
 
-      // Simulate form submission
+      // Construct email content
+      const subject = `New Estimate Request: ${projectType} - ${firstName} ${lastName}`;
+      const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nProject Type: ${projectType}\n\nDetails:\n${details}`;
+      
+      // Simulate "sending" feedback then open mail client
       setTimeout(() => {
-        btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-        btn.style.background = '#27ae60';
+        btn.innerHTML = '<i class="fas fa-check"></i> Redirecting to Email...';
+        btn.style.background = '#28a745';
+
+        // Redirect to mailto
+        window.location.href = `mailto:info@elegantcon.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         setTimeout(() => {
           btn.innerHTML = originalText;
@@ -199,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.disabled = false;
           contactForm.reset();
         }, 3000);
-      }, 1500);
+      }, 1000);
     });
   }
 
