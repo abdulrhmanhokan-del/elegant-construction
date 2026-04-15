@@ -22,16 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── Hero Video Optimization ──────────────────────────────────
   const heroVideo = document.getElementById('heroVideo');
   if (heroVideo) {
-    // Force play in case browser autoplay was throttled
-    heroVideo.play().catch(() => {
-      // If blocked, wait for first user interaction
-      document.addEventListener('click', () => heroVideo.play(), { once: true });
-    });
+    // Force play 
+    const playVideo = () => {
+      heroVideo.play().then(() => {
+        // Once playing hits, fade it in smoothly over the sharp poster
+        heroVideo.style.opacity = '1';
+      }).catch(() => {
+        document.addEventListener('click', playVideo, { once: true });
+      });
+    };
 
-    // Ensure it feels instant when it starts
-    heroVideo.addEventListener('playing', () => {
-      heroVideo.style.opacity = '1';
-    });
+    // If it's already buffered enough, just show it
+    if (heroVideo.readyState >= 3) {
+      playVideo();
+    } else {
+      heroVideo.addEventListener('canplay', playVideo, { once: true });
+    }
   }
 
   // ─── Sticky Header ──────────────────────────────────────────
