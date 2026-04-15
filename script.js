@@ -12,11 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Page Loader ─────────────────────────────────────────────
   const pageLoader = document.getElementById('pageLoader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      pageLoader.classList.add('hidden');
-    }, 600);
-  });
+  if (pageLoader) {
+    // Hide the loader immediately to make the site feel snappy
+    pageLoader.classList.add('hidden');
+    // Remove it from DOM after transition
+    setTimeout(() => pageLoader.remove(), 500);
+  }
 
   // ─── Sticky Header ──────────────────────────────────────────
   const header = document.getElementById('header');

@@ -12,11 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Page Loader ────────────────────────────────────────────
   const pageLoader = document.getElementById('pageLoader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      pageLoader.classList.add('hidden');
-    }, 600);
-  });
+  if (pageLoader) {
+    pageLoader.classList.add('hidden');
+    setTimeout(() => pageLoader.remove(), 500);
+  }
 
   // ─── Sticky Header ─────────────────────────────────────────
   const header = document.getElementById('header');
