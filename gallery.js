@@ -71,14 +71,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide loading spinner
     if (galleryLoading) galleryLoading.style.display = 'none';
 
+    let combined = [];
     if (typeof GALLERY_DATA !== 'undefined' && GALLERY_DATA.length > 0) {
-      galleryItems = GALLERY_DATA;
-      filteredItems = [...galleryItems];
-      renderGallery();
-      updateCounter();
-    } else {
-      showEmptyState();
+      combined = [...GALLERY_DATA];
     }
+
+    // Fetch remote videos automatically
+    fetch('remote-videos.json')
+      .then(res => res.json())
+      .catch(() => [])
+      .then(remoteItems => {
+        if (remoteItems && Array.isArray(remoteItems) && remoteItems.length > 0) {
+          remoteItems.forEach(item => {
+             let url = item.url || item.file;
+             if(url && url.includes('dropbox.com')) {
+               url = url.replace('dl=0', 'raw=1').replace('dl=1', 'raw=1');
+               if (!url.includes('raw=1')) url += url.includes('?') ? '&raw=1' : '?raw=1';
+             }
+             combined.push({ file: url, title: item.title || 'Dropbox Video', type: 'video' });
+          });
+        }
+        
+        if (combined.length > 0) {
+          galleryItems = combined;
+          filteredItems = [...galleryItems];
+          renderGallery();
+          updateCounter();
+        } else {
+          showEmptyState();
+        }
+      });
   }
 
   // ─── Render Gallery Cards ──────────────────────────────────

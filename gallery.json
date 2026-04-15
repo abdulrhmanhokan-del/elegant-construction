@@ -1,8 +1,212 @@
 [
-  {"file": "gallery/borrego-park.jpg", "title": "Borrego Park", "type": "image"},
-  {"file": "gallery/communications-center-renovation.jpg", "title": "Communications Center Renovation", "type": "image"},
-  {"file": "gallery/foothill-ranch-regency-park.jpg", "title": "Foothill Ranch Regency Park", "type": "image"},
-  {"file": "gallery/huntington-beach-police-department.png", "title": "Huntington Beach Police Department", "type": "image"},
-  {"file": "gallery/irvine-valley-college-project.mp4", "title": "Irvine Valley College Project", "type": "video"},
-  {"file": "gallery/lake-forest-live-oak-terraces.jpg", "title": "Lake Forest Live Oak Terraces", "type": "image"}
+  {
+    "file": "gallery/borrego-park.jpg",
+    "title": "borrego-park",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_03.jpg",
+    "title": "Borrego Park 03",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_04.jpg",
+    "title": "Borrego Park 04",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_05.jpg",
+    "title": "Borrego Park 05",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_06.jpg",
+    "title": "Borrego Park 06",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_07.jpg",
+    "title": "Borrego Park 07",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_08.jpg",
+    "title": "Borrego Park 08",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_09.jpg",
+    "title": "Borrego Park 09",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Borrego_Park_Foothill_Ranch_CA.jpg",
+    "title": "Borrego Park Foothill Ranch CA",
+    "type": "image"
+  },
+  {
+    "file": "gallery/communications-center-renovation.jpg",
+    "title": "communications-center-renovation",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Communications_Center_Renovation_02.jpg",
+    "title": "Communications Center Renovation 02",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Communications_Center_Renovation_03.jpg",
+    "title": "Communications Center Renovation 03",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Communications_Center_Renovation_04.jpg",
+    "title": "Communications Center Renovation 04",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Communications_Center_Renovation_Huntington_Beach_PD.jpg",
+    "title": "Communications Center Renovation Huntington Beach PD",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Elegant_Construction_Inc.jpg",
+    "title": "Elegant Construction Inc",
+    "type": "image"
+  },
+  {
+    "file": "gallery/El_Toro_High_School_Locker_Rooms_02.jpg",
+    "title": "El Toro High School Locker Rooms 02",
+    "type": "image"
+  },
+  {
+    "file": "gallery/El_Toro_High_School_Locker_Rooms_03.jpg",
+    "title": "El Toro High School Locker Rooms 03",
+    "type": "image"
+  },
+  {
+    "file": "gallery/El_Toro_High_School_Locker_Rooms_Lake_Forest.jpg",
+    "title": "El Toro High School Locker Rooms Lake Forest",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Fire_Station_5_Bathroom_Remodel_02.jpg",
+    "title": "Fire Station 5 Bathroom Remodel 02",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Fire_Station_5_Bathroom_Remodel_Orange_CA.jpg",
+    "title": "Fire Station 5 Bathroom Remodel Orange CA",
+    "type": "image"
+  },
+  {
+    "file": "gallery/foothill-ranch-regency-park.jpg",
+    "title": "foothill-ranch-regency-park",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Great_Park_Shade_Improvements_Irvine_CA.jpg",
+    "title": "Great Park Shade Improvements Irvine CA",
+    "type": "image"
+  },
+  {
+    "file": "gallery/huntington-beach-police-department.png",
+    "title": "huntington-beach-police-department",
+    "type": "image"
+  },
+  {
+    "file": "gallery/lake-forest-live-oak-terraces.jpg",
+    "title": "lake-forest-live-oak-terraces",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Live_Oak_Terraces_02.jpg",
+    "title": "Live Oak Terraces 02",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Live_Oak_Terraces_03.jpg",
+    "title": "Live Oak Terraces 03",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Live_Oak_Terraces_04.jpg",
+    "title": "Live Oak Terraces 04",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Live_Oak_Terraces_05.jpg",
+    "title": "Live Oak Terraces 05",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Live_Oak_Terraces_Irvine_Valley_College.jpg",
+    "title": "Live Oak Terraces Irvine Valley College",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Navigating_QA_Sessions.jpg",
+    "title": "Navigating QA Sessions",
+    "type": "image"
+  },
+  {
+    "file": "gallery/OCTA_Battery_Electric_Buses_02.jpg",
+    "title": "OCTA Battery Electric Buses 02",
+    "type": "image"
+  },
+  {
+    "file": "gallery/OCTA_Battery_Electric_Buses_03.jpg",
+    "title": "OCTA Battery Electric Buses 03",
+    "type": "image"
+  },
+  {
+    "file": "gallery/OCTA_Battery_Electric_Buses_Orange_County.jpg",
+    "title": "OCTA Battery Electric Buses Orange County",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Regency_Park_Lake_Forest_CA.jpg",
+    "title": "Regency Park Lake Forest CA",
+    "type": "image"
+  },
+  {
+    "file": "gallery/Science_Hall_Rocket_Sculpture_Orange_Coast_College.jpg",
+    "title": "Science Hall Rocket Sculpture Orange Coast College",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_02.jpg",
+    "title": "The Arbor Mini Park 02",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_03.jpg",
+    "title": "The Arbor Mini Park 03",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_04.jpg",
+    "title": "The Arbor Mini Park 04",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_05.jpg",
+    "title": "The Arbor Mini Park 05",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_06.jpg",
+    "title": "The Arbor Mini Park 06",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_07.jpg",
+    "title": "The Arbor Mini Park 07",
+    "type": "image"
+  },
+  {
+    "file": "gallery/The_Arbor_Mini_Park_Lake_Forest.jpg",
+    "title": "The Arbor Mini Park Lake Forest",
+    "type": "image"
+  }
 ]
