@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <div class="gallery-card-media">
           ${isVideo ? `
-            <video src="${item.file}" muted loop preload="metadata"></video>
+            <video muted loop preload="none" data-src="${item.file}"></video>
             <div class="gallery-card-play"><i class="fas fa-play"></i></div>
           ` : `
             <img src="${item.file}" alt="${item.title}" loading="lazy">
@@ -150,11 +150,27 @@ document.addEventListener('DOMContentLoaded', () => {
         openLightbox();
       });
 
-      // Auto-play video preview on hover
+      // Lazy-load video source and auto-play preview on hover
       if (isVideo) {
         const videoEl = card.querySelector('video');
+
+        // Lazy load: only set src when card scrolls into view
+        const lazyObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const src = videoEl.dataset.src;
+              if (src && !videoEl.src) {
+                videoEl.src = src;
+                videoEl.load();
+              }
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '200px' });
+        lazyObserver.observe(card);
+
         card.addEventListener('mouseenter', () => {
-          videoEl.play().catch(() => {});
+          if (videoEl.src) videoEl.play().catch(() => {});
         });
         card.addEventListener('mouseleave', () => {
           videoEl.pause();
