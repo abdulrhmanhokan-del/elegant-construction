@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
 
       // Construct email content
-      const subject = `New Estimate Request: ${projectType} - ${firstName} ${lastName}`;
+      const subject = `New Bid Request: ${projectType} - ${firstName} ${lastName}`;
       const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nProject Type: ${projectType}\n\nDetails:\n${details}`;
       
       // Simulate "sending" feedback then open mail client
