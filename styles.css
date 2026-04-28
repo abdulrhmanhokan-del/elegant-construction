@@ -468,8 +468,8 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 950px;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1606,11 +1606,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero {
-    min-height: 850px;
-    padding-bottom: 250px;
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   .hero-title {
@@ -1696,7 +1696,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-stats {
     position: relative;
-    margin-top: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem; /* Safe area for phone bottom nav */
   }
 
   .hero-stats-inner {
@@ -1739,6 +1740,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-stats {
     position: relative;
     margin-top: 3rem;
+    margin-bottom: 3rem; /* Extra safe area for small phones */
   }
 
   .hero-stats-inner {
